@@ -1,24 +1,55 @@
 package com.example.noteapi.controller;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.noteapi.dto.Note;
+import com.example.noteapi.dto.Notes;
+import com.example.noteapi.services.NoteApiService;
 
 @RestController
 @RequestMapping("/notes")
 public class NoteApiServiceController {
+	
+	private NoteApiService noteApiService;
 
 	@PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<String> createNote(
 			@RequestBody Note note){
-		boolean success = false;
+		boolean success = noteApiService.createNote(note);
 		
+		if(success) {
+			return new ResponseEntity<>("Note created.", HttpStatus.OK);
+		}
 		
-		return ResponseEntity.ok("Create Note completed with errors: " + success);
+		return new ResponseEntity<>("Something went wrong in note creation.",
+				HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+	
+	@GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Notes> retreiveAllNotes(){
+		Notes notes = noteApiService.retrieveAllNotes();
+		
+		return new ResponseEntity<>(notes, HttpStatus.OK);
+	}
+	
+	@PutMapping(path = "/{id}")
+	public ResponseEntity<String> updateNote(){
+		
+		return null;
+	}
+	
+	@DeleteMapping(path = "/{id}")
+	public ResponseEntity<String> deleteNote(){
+		
+		return null;
 	}
 }

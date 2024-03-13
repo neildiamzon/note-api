@@ -9,6 +9,7 @@ import lombok.Setter;
 @Builder
 public class Note {
 	
+	private String id;
 	private String title;
 	private String body;
 }
