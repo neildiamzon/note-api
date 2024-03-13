@@ -20,7 +20,14 @@ Create a RESTful API that allows users to create, retrieve, update, and delete n
 4. Error Handling: Basic error handling for common scenarios (e.g., note not found).
 
 
-## How to run (you need mvn installed and jre and/or jdk)
+## How to start application (you need mvn installed and jre and/or jdk)
 
 1. Navigate to folder containing pom.xml
 2. type command in terminal: mvn spring-boot:run
+
+## How to use application 
+Pre-requisite: Postman or any similar application
+1. Sample image below:
+  <img width="844" alt="image" src="https://github.com/neildiamzon/note-api/assets/42030059/df81f27b-ac6f-4215-9dbe-995e198ec060">
+
+  
