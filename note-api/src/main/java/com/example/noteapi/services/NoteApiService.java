@@ -18,7 +18,7 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 public class NoteApiService {
 
-	public boolean createNote(Note note) throws Exception {
+	public boolean createNote(Note note){
 		JSONObject noteJson = new JSONObject();
 		noteJson.put("id", note.getId());
 		noteJson.put("title", note.getTitle());
