@@ -22,8 +22,9 @@ Create a RESTful API that allows users to create, retrieve, update, and delete n
 
 ## How to start application (you need mvn installed and jre and/or jdk)
 
-1. Navigate to folder containing pom.xml
-2. type command in terminal: mvn spring-boot:run
+1. Clone repo into your local 
+2. Navigate to folder containing pom.xml
+3. type command in terminal: mvn spring-boot:run
 
 ## How to use application 
 Pre-requisite: Postman or any similar application
