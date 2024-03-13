@@ -10,12 +10,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.noteapi.dto.Note;
 import com.example.noteapi.dto.Notes;
 import com.example.noteapi.services.NoteApiService;
 
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
@@ -28,7 +30,7 @@ public class NoteApiServiceController {
 
 	@PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<String> createNote(
-			@RequestBody Note note){
+			@Valid @RequestBody Note note){
 		log.info("Create Note with id={} and title={}", note.getId(), note.getTitle());
 		boolean success = noteApiService.createNote(note);
 		
@@ -50,9 +52,12 @@ public class NoteApiServiceController {
 	}
 	
 	@PutMapping(path = "/{id}")
-	public ResponseEntity<String> updateNote(){
+	public ResponseEntity<Notes> retrieveNote(@RequestParam String id){
+		log.info("Retrieving content of id: {}", id);
 		
-		return null;
+		Notes notes = noteApiService.retrieveNote(id);
+		
+		return new ResponseEntity<>(notes, HttpStatus.OK);
 	}
 	
 	@DeleteMapping(path = "/{id}")

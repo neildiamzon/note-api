@@ -14,19 +14,20 @@ public class NoteApiApplication {
 
 	public static void main(String[] args) {
 		log.info("NOTE-API APPLICATION STARTING");
-		if(createJsonFile()) {
+		
+		if(createDirectory()) {
 			SpringApplication.run(NoteApiApplication.class, args);
 		} else {
-			log.error("error in running application");
+			log.error("Error in running application.");
 		}
 	}
 
-	private static boolean createJsonFile() {
+	private static boolean createDirectory() {
 		try {
-			File noteDirectory = new File("NOTES.json");
+			File noteDirectory = new File("./all-notes");
 			
 			if(!noteDirectory.exists()) {
-				noteDirectory.createNewFile();
+				noteDirectory.mkdir();
 			}
 		} catch (Exception e) {
 			log.error("Error in creating NOTES directory: {}", e.getMessage());

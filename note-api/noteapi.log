@@ -120,3 +120,367 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2024-03-13T14:40:22.698+08:00  INFO 18467 --- [note-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2024-03-13T14:40:22.699+08:00  INFO 18467 --- [note-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2024-03-13T14:40:22.716+08:00  INFO 18467 --- [note-api] [http-nio-8080-exec-1] c.e.n.c.NoteApiServiceController         : Getting all notes.
+2024-03-13T14:41:02.453+08:00  INFO 18491 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 18491 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T14:41:02.454+08:00  INFO 18491 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T14:41:03.000+08:00  INFO 18491 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T14:41:03.009+08:00  INFO 18491 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T14:41:03.009+08:00  INFO 18491 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T14:41:03.053+08:00  INFO 18491 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T14:41:03.054+08:00  INFO 18491 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 572 ms
+2024-03-13T14:41:03.274+08:00  INFO 18491 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-13T14:41:03.281+08:00  INFO 18491 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Started NoteApiApplication in 1.093 seconds (process running for 1.36)
+2024-03-13T14:41:44.722+08:00  INFO 18491 --- [note-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-13T14:41:44.723+08:00  INFO 18491 --- [note-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-13T14:41:44.724+08:00  INFO 18491 --- [note-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-13T14:41:44.742+08:00  INFO 18491 --- [note-api] [http-nio-8080-exec-1] c.e.n.c.NoteApiServiceController         : Getting all notes.
+2024-03-13T14:42:07.591+08:00  INFO 18491 --- [note-api] [http-nio-8080-exec-3] c.e.n.c.NoteApiServiceController         : Create Note with id=test and title=title
+2024-03-13T14:42:49.735+08:00  INFO 18491 --- [note-api] [http-nio-8080-exec-4] c.e.n.c.NoteApiServiceController         : Create Note with id=test and title=title
+2024-03-13T14:42:50.731+08:00  INFO 18491 --- [note-api] [http-nio-8080-exec-5] c.e.n.c.NoteApiServiceController         : Create Note with id=test and title=title
+2024-03-13T14:43:06.203+08:00  INFO 18491 --- [note-api] [http-nio-8080-exec-6] c.e.n.c.NoteApiServiceController         : Create Note with id=2 and title=title
+2024-03-13T14:57:05.981+08:00  INFO 18565 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 18565 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T14:57:05.982+08:00  INFO 18565 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T14:57:06.555+08:00  INFO 18565 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T14:57:06.568+08:00  INFO 18565 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T14:57:06.568+08:00  INFO 18565 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T14:57:06.606+08:00  INFO 18565 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T14:57:06.606+08:00  INFO 18565 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 594 ms
+2024-03-13T14:57:06.822+08:00  WARN 18565 --- [note-api] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-03-13T14:57:06.833+08:00  INFO 18565 --- [note-api] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-13T14:57:06.843+08:00 ERROR 18565 --- [note-api] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-03-13T14:57:29.248+08:00  INFO 18567 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 18567 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T14:57:29.249+08:00  INFO 18567 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T14:57:29.774+08:00  INFO 18567 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T14:57:29.787+08:00  INFO 18567 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T14:57:29.787+08:00  INFO 18567 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T14:57:29.824+08:00  INFO 18567 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T14:57:29.825+08:00  INFO 18567 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 551 ms
+2024-03-13T14:57:30.038+08:00  WARN 18567 --- [note-api] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-03-13T14:57:30.049+08:00  INFO 18567 --- [note-api] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-13T14:57:30.059+08:00 ERROR 18567 --- [note-api] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-03-13T14:57:38.651+08:00  INFO 18576 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 18576 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T14:57:38.652+08:00  INFO 18576 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T14:57:39.312+08:00  INFO 18576 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T14:57:39.324+08:00  INFO 18576 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T14:57:39.325+08:00  INFO 18576 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T14:57:39.362+08:00  INFO 18576 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T14:57:39.363+08:00  INFO 18576 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 676 ms
+2024-03-13T14:57:39.558+08:00  WARN 18576 --- [note-api] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-03-13T14:57:39.568+08:00  INFO 18576 --- [note-api] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-13T14:57:39.575+08:00 ERROR 18576 --- [note-api] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-03-13T14:58:11.552+08:00  INFO 18589 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 18589 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T14:58:11.553+08:00  INFO 18589 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T14:58:12.030+08:00  INFO 18589 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T14:58:12.037+08:00  INFO 18589 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T14:58:12.037+08:00  INFO 18589 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T14:58:12.070+08:00  INFO 18589 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T14:58:12.071+08:00  INFO 18589 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 492 ms
+2024-03-13T14:58:12.255+08:00  WARN 18589 --- [note-api] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-03-13T14:58:12.264+08:00  INFO 18589 --- [note-api] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-13T14:58:12.272+08:00 ERROR 18589 --- [note-api] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-03-13T15:00:16.288+08:00  INFO 18609 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 18609 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T15:00:16.289+08:00  INFO 18609 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T15:00:16.971+08:00  INFO 18609 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T15:00:16.979+08:00  INFO 18609 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T15:00:16.979+08:00  INFO 18609 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T15:00:17.023+08:00  INFO 18609 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T15:00:17.023+08:00  INFO 18609 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 699 ms
+2024-03-13T15:00:17.244+08:00  INFO 18609 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-13T15:00:17.252+08:00  INFO 18609 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Started NoteApiApplication in 1.255 seconds (process running for 1.533)
+2024-03-13T15:01:51.132+08:00  INFO 18614 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 18614 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T15:01:51.133+08:00  INFO 18614 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T15:01:51.618+08:00  INFO 18614 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T15:01:51.626+08:00  INFO 18614 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T15:01:51.626+08:00  INFO 18614 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T15:01:51.665+08:00  INFO 18614 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T15:01:51.665+08:00  INFO 18614 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 504 ms
+2024-03-13T15:01:51.849+08:00  WARN 18614 --- [note-api] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-03-13T15:01:51.859+08:00  INFO 18614 --- [note-api] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-13T15:01:51.867+08:00 ERROR 18614 --- [note-api] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-03-13T15:02:12.795+08:00  INFO 18619 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 18619 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T15:02:12.796+08:00  INFO 18619 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T15:02:13.685+08:00  INFO 18619 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T15:02:13.696+08:00  INFO 18619 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T15:02:13.696+08:00  INFO 18619 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T15:02:13.805+08:00  INFO 18619 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T15:02:13.806+08:00  INFO 18619 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 975 ms
+2024-03-13T15:02:14.243+08:00  INFO 18619 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-13T15:02:14.256+08:00  INFO 18619 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Started NoteApiApplication in 1.75 seconds (process running for 2.004)
+2024-03-13T15:02:17.798+08:00  INFO 18619 --- [note-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-13T15:02:17.798+08:00  INFO 18619 --- [note-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-13T15:02:17.799+08:00  INFO 18619 --- [note-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-13T15:02:17.848+08:00  INFO 18619 --- [note-api] [http-nio-8080-exec-1] c.e.n.c.NoteApiServiceController         : Create Note with id=2 and title=title
+2024-03-13T15:13:04.361+08:00  INFO 18667 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 18667 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T15:13:04.362+08:00  INFO 18667 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T15:13:04.846+08:00  INFO 18667 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T15:13:04.857+08:00  INFO 18667 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T15:13:04.858+08:00  INFO 18667 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T15:13:04.892+08:00  INFO 18667 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T15:13:04.893+08:00  INFO 18667 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 505 ms
+2024-03-13T15:13:05.094+08:00  INFO 18667 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-13T15:13:05.101+08:00  INFO 18667 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Started NoteApiApplication in 1.003 seconds (process running for 1.263)
+2024-03-13T15:13:14.196+08:00  INFO 18667 --- [note-api] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-13T15:13:14.196+08:00  INFO 18667 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-13T15:13:14.197+08:00  INFO 18667 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-13T15:13:14.253+08:00  INFO 18667 --- [note-api] [http-nio-8080-exec-2] c.e.n.c.NoteApiServiceController         : Create Note with id=2 and title=title
+2024-03-13T15:16:40.587+08:00  INFO 18713 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 18713 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T15:16:40.588+08:00  INFO 18713 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T15:16:41.530+08:00  INFO 18713 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T15:16:41.542+08:00  INFO 18713 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T15:16:41.543+08:00  INFO 18713 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T15:16:41.614+08:00  INFO 18713 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T15:16:41.615+08:00  INFO 18713 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 981 ms
+2024-03-13T15:16:42.042+08:00  INFO 18713 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-13T15:16:42.055+08:00  INFO 18713 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Started NoteApiApplication in 1.776 seconds (process running for 2.051)
+2024-03-13T15:16:49.101+08:00  INFO 18713 --- [note-api] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-13T15:16:49.101+08:00  INFO 18713 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-13T15:16:49.102+08:00  INFO 18713 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-13T15:16:49.151+08:00  INFO 18713 --- [note-api] [http-nio-8080-exec-2] c.e.n.c.NoteApiServiceController         : Create Note with id=note-1997 and title=title
+2024-03-13T15:17:47.032+08:00  INFO 18713 --- [note-api] [http-nio-8080-exec-3] c.e.n.c.NoteApiServiceController         : Create Note with id=note-1997 and title=title
+2024-03-13T15:40:40.752+08:00  INFO 18884 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 18884 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T15:40:40.753+08:00  INFO 18884 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T15:40:41.266+08:00  INFO 18884 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T15:40:41.274+08:00  INFO 18884 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T15:40:41.274+08:00  INFO 18884 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T15:40:41.309+08:00  INFO 18884 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T15:40:41.309+08:00  INFO 18884 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 528 ms
+2024-03-13T15:40:41.517+08:00  INFO 18884 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-13T15:40:41.524+08:00  INFO 18884 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Started NoteApiApplication in 1.04 seconds (process running for 1.31)
+2024-03-13T15:40:53.949+08:00  INFO 18884 --- [note-api] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-13T15:40:53.950+08:00  INFO 18884 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-13T15:40:53.951+08:00  INFO 18884 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-13T15:40:53.966+08:00  INFO 18884 --- [note-api] [http-nio-8080-exec-2] c.e.n.c.NoteApiServiceController         : Getting all notes.
+2024-03-13T15:41:32.700+08:00  INFO 18892 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 18892 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T15:41:32.702+08:00  INFO 18892 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T15:41:33.423+08:00  INFO 18892 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T15:41:33.436+08:00  INFO 18892 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T15:41:33.437+08:00  INFO 18892 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T15:41:33.475+08:00  INFO 18892 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T15:41:33.476+08:00  INFO 18892 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 742 ms
+2024-03-13T15:41:33.719+08:00  INFO 18892 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-13T15:41:33.728+08:00  INFO 18892 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Started NoteApiApplication in 1.322 seconds (process running for 1.603)
+2024-03-13T15:41:41.994+08:00  INFO 18892 --- [note-api] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-13T15:41:41.994+08:00  INFO 18892 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-13T15:41:41.995+08:00  INFO 18892 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-13T15:41:42.010+08:00  INFO 18892 --- [note-api] [http-nio-8080-exec-2] c.e.n.c.NoteApiServiceController         : Getting all notes.
+2024-03-13T15:41:57.381+08:00  INFO 18898 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 18898 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T15:41:57.383+08:00  INFO 18898 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T15:41:57.861+08:00  INFO 18898 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T15:41:57.873+08:00  INFO 18898 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T15:41:57.873+08:00  INFO 18898 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T15:41:57.908+08:00  INFO 18898 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T15:41:57.908+08:00  INFO 18898 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 498 ms
+2024-03-13T15:41:58.118+08:00  INFO 18898 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-13T15:41:58.126+08:00  INFO 18898 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Started NoteApiApplication in 1.001 seconds (process running for 1.251)
+2024-03-13T15:41:59.884+08:00  INFO 18898 --- [note-api] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-13T15:41:59.885+08:00  INFO 18898 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-13T15:41:59.885+08:00  INFO 18898 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-03-13T15:41:59.901+08:00  INFO 18898 --- [note-api] [http-nio-8080-exec-2] c.e.n.c.NoteApiServiceController         : Getting all notes.
+2024-03-13T15:41:59.908+08:00  INFO 18898 --- [note-api] [http-nio-8080-exec-2] c.e.noteapi.services.NoteApiService      : {"title":"title","body":"overwrite"}
+2024-03-13T15:42:38.798+08:00  INFO 18912 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 18912 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T15:42:38.799+08:00  INFO 18912 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T15:42:39.490+08:00  INFO 18912 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T15:42:39.499+08:00  INFO 18912 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T15:42:39.499+08:00  INFO 18912 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T15:42:39.542+08:00  INFO 18912 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T15:42:39.542+08:00  INFO 18912 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 712 ms
+2024-03-13T15:42:39.944+08:00  INFO 18912 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-13T15:42:39.954+08:00  INFO 18912 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Started NoteApiApplication in 1.423 seconds (process running for 1.678)
+2024-03-13T15:42:40.881+08:00  INFO 18912 --- [note-api] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-13T15:42:40.881+08:00  INFO 18912 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-13T15:42:40.882+08:00  INFO 18912 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-13T15:42:40.897+08:00  INFO 18912 --- [note-api] [http-nio-8080-exec-2] c.e.n.c.NoteApiServiceController         : Getting all notes.
+2024-03-13T15:42:40.904+08:00  INFO 18912 --- [note-api] [http-nio-8080-exec-2] c.e.noteapi.services.NoteApiService      : note-1997.json content: {"title":"title","body":"overwrite"}
+2024-03-13T15:46:40.255+08:00  INFO 18953 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 18953 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T15:46:40.258+08:00  INFO 18953 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T15:46:40.851+08:00  INFO 18953 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T15:46:40.859+08:00  INFO 18953 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T15:46:40.859+08:00  INFO 18953 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T15:46:40.901+08:00  INFO 18953 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T15:46:40.902+08:00  INFO 18953 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 610 ms
+2024-03-13T15:46:41.102+08:00  WARN 18953 --- [note-api] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-03-13T15:46:41.111+08:00  INFO 18953 --- [note-api] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-13T15:46:41.119+08:00 ERROR 18953 --- [note-api] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-03-13T15:46:52.362+08:00  INFO 18956 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 18956 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T15:46:52.363+08:00  INFO 18956 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T15:46:53.137+08:00  INFO 18956 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T15:46:53.146+08:00  INFO 18956 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T15:46:53.146+08:00  INFO 18956 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T15:46:53.190+08:00  INFO 18956 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T15:46:53.191+08:00  INFO 18956 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 795 ms
+2024-03-13T15:46:53.469+08:00  INFO 18956 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-13T15:46:53.478+08:00  INFO 18956 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Started NoteApiApplication in 1.372 seconds (process running for 1.621)
+2024-03-13T15:46:57.919+08:00  INFO 18956 --- [note-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-13T15:46:57.920+08:00  INFO 18956 --- [note-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-13T15:46:57.921+08:00  INFO 18956 --- [note-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-13T15:46:57.936+08:00  INFO 18956 --- [note-api] [http-nio-8080-exec-1] c.e.n.c.NoteApiServiceController         : Getting all notes.
+2024-03-13T15:47:25.697+08:00  INFO 18956 --- [note-api] [http-nio-8080-exec-3] c.e.n.c.NoteApiServiceController         : Create Note with id=note-1998 and title=the notes of 1998
+2024-03-13T15:47:29.303+08:00  INFO 18956 --- [note-api] [http-nio-8080-exec-4] c.e.n.c.NoteApiServiceController         : Getting all notes.
+2024-03-13T15:55:43.988+08:00  INFO 18956 --- [note-api] [http-nio-8080-exec-7] c.e.n.c.NoteApiServiceController         : Create Note with id=note-1998 and title=the notes of 1998
+2024-03-13T15:55:49.220+08:00  INFO 18956 --- [note-api] [http-nio-8080-exec-8] c.e.n.c.NoteApiServiceController         : Getting all notes.
+2024-03-13T17:12:59.614+08:00  INFO 19174 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 19174 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T17:12:59.616+08:00  INFO 19174 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T17:13:00.575+08:00  INFO 19174 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T17:13:00.583+08:00  INFO 19174 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T17:13:00.584+08:00  INFO 19174 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T17:13:00.810+08:00  INFO 19174 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T17:13:00.811+08:00  INFO 19174 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1160 ms
+2024-03-13T17:13:01.208+08:00  INFO 19174 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-13T17:13:01.216+08:00  INFO 19174 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Started NoteApiApplication in 1.907 seconds (process running for 2.206)
+2024-03-13T17:13:04.867+08:00  INFO 19174 --- [note-api] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-13T17:13:04.867+08:00  INFO 19174 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-13T17:13:04.868+08:00  INFO 19174 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-13T17:13:04.883+08:00  INFO 19174 --- [note-api] [http-nio-8080-exec-2] c.e.n.c.NoteApiServiceController         : Getting all notes.
+2024-03-13T17:13:10.127+08:00  INFO 19174 --- [note-api] [http-nio-8080-exec-3] c.e.n.c.NoteApiServiceController         : Create Note with id= and title=the notes of 1998
+2024-03-13T17:13:12.020+08:00  INFO 19174 --- [note-api] [http-nio-8080-exec-4] c.e.n.c.NoteApiServiceController         : Create Note with id= and title=the notes of 1998
+2024-03-13T17:13:40.364+08:00  INFO 19174 --- [note-api] [http-nio-8080-exec-5] c.e.n.c.NoteApiServiceController         : Getting all notes.
+2024-03-13T17:14:14.181+08:00  INFO 19185 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 19185 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T17:14:14.182+08:00  INFO 19185 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T17:14:14.670+08:00  INFO 19185 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T17:14:14.678+08:00  INFO 19185 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T17:14:14.678+08:00  INFO 19185 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T17:14:14.717+08:00  INFO 19185 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T17:14:14.717+08:00  INFO 19185 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 511 ms
+2024-03-13T17:14:14.923+08:00  INFO 19185 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-13T17:14:14.930+08:00  INFO 19185 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Started NoteApiApplication in 0.996 seconds (process running for 1.243)
+2024-03-13T17:14:17.209+08:00  INFO 19185 --- [note-api] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-13T17:14:17.209+08:00  INFO 19185 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-13T17:14:17.210+08:00  INFO 19185 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-13T17:14:17.226+08:00  INFO 19185 --- [note-api] [http-nio-8080-exec-2] c.e.n.c.NoteApiServiceController         : Getting all notes.
+2024-03-13T17:15:20.201+08:00  INFO 19185 --- [note-api] [http-nio-8080-exec-5] c.e.n.c.NoteApiServiceController         : Getting all notes.
+2024-03-13T17:15:23.861+08:00  INFO 19185 --- [note-api] [http-nio-8080-exec-6] c.e.n.c.NoteApiServiceController         : Create Note with id=null and title=the notes of 1998
+2024-03-13T17:15:25.152+08:00  INFO 19185 --- [note-api] [http-nio-8080-exec-7] c.e.n.c.NoteApiServiceController         : Create Note with id=null and title=the notes of 1998
+2024-03-13T17:15:28.671+08:00  INFO 19185 --- [note-api] [http-nio-8080-exec-8] c.e.n.c.NoteApiServiceController         : Getting all notes.
+2024-03-13T17:15:29.868+08:00  INFO 19185 --- [note-api] [http-nio-8080-exec-9] c.e.n.c.NoteApiServiceController         : Getting all notes.
+2024-03-13T17:16:05.190+08:00  INFO 19208 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 19208 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T17:16:05.192+08:00  INFO 19208 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T17:16:06.286+08:00  INFO 19208 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T17:16:06.299+08:00  INFO 19208 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T17:16:06.299+08:00  INFO 19208 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T17:16:06.347+08:00  INFO 19208 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T17:16:06.347+08:00  INFO 19208 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1126 ms
+2024-03-13T17:16:06.654+08:00  INFO 19208 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-13T17:16:06.663+08:00  INFO 19208 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Started NoteApiApplication in 1.759 seconds (process running for 2.022)
+2024-03-13T17:16:07.905+08:00  INFO 19208 --- [note-api] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-13T17:16:07.905+08:00  INFO 19208 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-13T17:16:07.906+08:00  INFO 19208 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-13T17:16:07.921+08:00  INFO 19208 --- [note-api] [http-nio-8080-exec-2] c.e.n.c.NoteApiServiceController         : Getting all notes.
+2024-03-13T17:16:12.130+08:00  WARN 19208 --- [note-api] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.String> com.example.noteapi.controller.NoteApiServiceController.createNote(com.example.noteapi.dto.Note): [Field error in object 'note' on field 'id': rejected value [null]; codes [NotNull.note.id,NotNull.id,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [note.id,id]; arguments []; default message [id]]; default message [ID must not be null.]] ]
+2024-03-13T17:18:54.406+08:00  INFO 19228 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 19228 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T17:18:54.408+08:00  INFO 19228 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T17:18:55.687+08:00  INFO 19228 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T17:18:55.702+08:00  INFO 19228 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T17:18:55.703+08:00  INFO 19228 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T17:18:55.776+08:00  INFO 19228 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T17:18:55.776+08:00  INFO 19228 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1337 ms
+2024-03-13T17:18:56.188+08:00  INFO 19228 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-13T17:18:56.201+08:00  INFO 19228 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Started NoteApiApplication in 2.079 seconds (process running for 2.358)
+2024-03-13T17:18:57.749+08:00  INFO 19228 --- [note-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-13T17:18:57.750+08:00  INFO 19228 --- [note-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-13T17:18:57.751+08:00  INFO 19228 --- [note-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-03-13T17:18:57.829+08:00  INFO 19228 --- [note-api] [http-nio-8080-exec-1] c.e.n.e.NoteApiExceptionHandler          : Validation error has occurred Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.String> com.example.noteapi.controller.NoteApiServiceController.createNote(com.example.noteapi.dto.Note): [Field error in object 'note' on field 'id': rejected value [null]; codes [NotNull.note.id,NotNull.id,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [note.id,id]; arguments []; default message [id]]; default message [ID must not be null.]] 
+2024-03-13T17:20:10.775+08:00  INFO 19238 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Starting NoteApiApplication using Java 17.0.4 with PID 19238 (/Users/neildiamzon/Documents/git/github-projects/note-api/note-api/target/classes started by neildiamzon in /Users/neildiamzon/Documents/git/github-projects/note-api/note-api)
+2024-03-13T17:20:10.776+08:00  INFO 19238 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T17:20:11.354+08:00  INFO 19238 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-13T17:20:11.362+08:00  INFO 19238 --- [note-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-13T17:20:11.362+08:00  INFO 19238 --- [note-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-13T17:20:11.399+08:00  INFO 19238 --- [note-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-13T17:20:11.399+08:00  INFO 19238 --- [note-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 594 ms
+2024-03-13T17:20:11.723+08:00  INFO 19238 --- [note-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-13T17:20:11.732+08:00  INFO 19238 --- [note-api] [main] com.example.noteapi.NoteApiApplication   : Started NoteApiApplication in 1.206 seconds (process running for 1.457)
+2024-03-13T17:20:13.768+08:00  INFO 19238 --- [note-api] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-13T17:20:13.769+08:00  INFO 19238 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-13T17:20:13.770+08:00  INFO 19238 --- [note-api] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-13T17:20:13.849+08:00  INFO 19238 --- [note-api] [http-nio-8080-exec-2] c.e.n.e.NoteApiExceptionHandler          : Validation error has occurred Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.String> com.example.noteapi.controller.NoteApiServiceController.createNote(com.example.noteapi.dto.Note): [Field error in object 'note' on field 'id': rejected value [null]; codes [NotNull.note.id,NotNull.id,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [note.id,id]; arguments []; default message [id]]; default message [ID must not be null.]] 
+2024-03-13T17:20:36.493+08:00  WARN 19238 --- [note-api] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries]
+2024-03-13T17:20:40.884+08:00  INFO 19238 --- [note-api] [http-nio-8080-exec-6] c.e.n.c.NoteApiServiceController         : Create Note with id=show-e and title=the notes of 1998
+2024-03-13T17:21:31.019+08:00  INFO 19238 --- [note-api] [http-nio-8080-exec-7] c.e.n.c.NoteApiServiceController         : Getting all notes.
