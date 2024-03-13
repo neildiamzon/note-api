@@ -20,7 +20,7 @@ Create a RESTful API that allows users to create, retrieve, update, and delete n
 4. Error Handling: Basic error handling for common scenarios (e.g., note not found).
 
 
-## How to run (you need mvn installed)
+## How to run (you need mvn installed and jre and/or jdk)
 
 1. Navigate to folder containing pom.xml
 2. type command in terminal: mvn spring-boot:run
