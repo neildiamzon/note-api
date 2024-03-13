@@ -74,7 +74,9 @@ public class NoteApiServiceController {
 		log.info("Retrieving content of id: {}", id);
 		
 		Notes notes = noteApiService.retrieveNote(id);
-		
+		if (notes == null) {
+			return new ResponseEntity<>(notes, HttpStatus.NOT_FOUND);
+		}
 		return new ResponseEntity<>(notes, HttpStatus.OK);
 	}
 	
