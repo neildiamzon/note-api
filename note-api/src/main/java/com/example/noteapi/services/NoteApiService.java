@@ -26,13 +26,19 @@ public class NoteApiService {
 	private JSONParser parser = new JSONParser();  
 	
 	public boolean createNote(Note noteRequest){
-		JSONObject contents = new JSONObject();
-		contents.put("title", noteRequest.getTitle());
-		contents.put("body", noteRequest.getBody());
-		
-		String fileName = PATH + noteRequest.getId() + ".json";
-	
-		try (FileWriter file = new FileWriter(fileName)) {
+		try {
+			String fileName = PATH + noteRequest.getId() + ".json";
+			
+			if (!noteRequest.getId().matches("^[a-zA-Z0-9_-]{2,20}$")) {
+				log.error("INVALID file name.");
+				return false;
+			}
+			FileWriter file = new FileWriter(fileName);
+			
+			JSONObject contents = new JSONObject();
+			contents.put("title", noteRequest.getTitle());
+			contents.put("body", noteRequest.getBody());
+			
             file.write(contents.toJSONString()); 
             file.flush();
         } catch (IOException e) {
@@ -43,18 +49,51 @@ public class NoteApiService {
 		return true;
 	}
 	
-	public boolean deleteNote(Note note) {
-		boolean success = false;
+	public boolean deleteNote(String id) {
+		String fileName = PATH + id + ".json";
 		
-		
-		return success;
+		try {
+			File file = new File(fileName);
+			
+			if(!file.exists()) {
+				log.error("File: {} is not found", fileName);
+				return false;
+			}
+			
+			if(file.delete()) {
+				log.info("Note successfully deleted.");
+				return true;
+			} 
+			
+			return false;
+		} catch (Exception e) {
+			log.error("Error in creating NOTES directory: {}", e.getMessage());
+			return false;
+		}
 	}
 	
-	public Notes updateNote(Note note) {
-
-		List<Note> notes = new ArrayList<>();
+	public boolean updateNote(String id, Note note) {
+		String fileName = PATH + id + ".json";
 		
-		return new Notes(notes);
+		try {
+			File file = new File(fileName);
+			
+			if(!file.exists()) {
+				log.error("File: {} is not found", fileName);
+				return false;
+			}
+			
+			note.setId(id);
+			if(!createNote(note)) {
+				log.error("Error in updating note");
+				return false;
+			}
+			
+			return true;
+		} catch (Exception e) {
+			log.error("Error in creating NOTES directory: {}", e.getMessage());
+			return false;
+		}
 	}
 	
 	public Notes retrieveNote(String id) {

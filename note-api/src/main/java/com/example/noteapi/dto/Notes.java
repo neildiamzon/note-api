@@ -13,5 +13,7 @@ import lombok.Setter;
 @Builder
 @AllArgsConstructor
 public class Notes {
+	
+	@Builder.Default
 	private List<Note> noteList = new ArrayList<>();
 }

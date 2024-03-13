@@ -17,9 +17,9 @@ public class NoteApiExceptionHandler {
 	@ExceptionHandler({IllegalArgumentException.class})
 	public ResponseEntity<String> handleValidationException(
 			IllegalArgumentException ex){
-		log.info("Validation error has occurred {}", ex.getMessage());
+		log.info("Argument error has occurred {}", ex.getMessage());
 		
-		return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
+		return new ResponseEntity<>("File is not found", HttpStatus.NOT_FOUND);
 	}
 	
 	@ExceptionHandler({MethodArgumentNotValidException.class})
@@ -30,5 +30,6 @@ public class NoteApiExceptionHandler {
 		return new ResponseEntity<>("One or more fields are not "
 				+ "valid/missing from request", HttpStatus.BAD_REQUEST);
 	}
+	
 	
 }
