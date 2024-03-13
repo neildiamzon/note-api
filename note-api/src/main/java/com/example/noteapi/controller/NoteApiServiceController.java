@@ -1,5 +1,6 @@
 package com.example.noteapi.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -15,15 +16,20 @@ import com.example.noteapi.dto.Note;
 import com.example.noteapi.dto.Notes;
 import com.example.noteapi.services.NoteApiService;
 
+import lombok.extern.slf4j.Slf4j;
+
 @RestController
+@Slf4j
 @RequestMapping("/notes")
 public class NoteApiServiceController {
 	
+	@Autowired
 	private NoteApiService noteApiService;
 
 	@PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<String> createNote(
 			@RequestBody Note note){
+		log.info("Create Note with id={} and title={}", note.getId(), note.getTitle());
 		boolean success = noteApiService.createNote(note);
 		
 		if(success) {
@@ -36,6 +42,8 @@ public class NoteApiServiceController {
 	
 	@GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Notes> retreiveAllNotes(){
+		log.info("Getting all notes.");
+		
 		Notes notes = noteApiService.retrieveAllNotes();
 		
 		return new ResponseEntity<>(notes, HttpStatus.OK);
