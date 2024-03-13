@@ -16,6 +16,8 @@ public class NoteApiApplication {
 		log.info("NOTE-API APPLICATION STARTING");
 		if(createJsonFile()) {
 			SpringApplication.run(NoteApiApplication.class, args);
+		} else {
+			log.error("error in running application");
 		}
 	}
 
@@ -28,8 +30,9 @@ public class NoteApiApplication {
 			}
 		} catch (Exception e) {
 			log.error("Error in creating NOTES directory: {}", e.getMessage());
+			return false;
 		}
-		return false;
+		return true;
 	}
 
 }
