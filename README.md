@@ -1,6 +1,4 @@
 
-## OTA Initial Coding Challenge
-
 ### Objective
 Develop a simple backend for a note-taking application using either Micronaut, Spring-boot, or something similar.
 
